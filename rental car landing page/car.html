@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Rental car</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="title">Aziz rental car</h1>
+        <nav class="navigationbar">
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#Featured">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <img src="image/mercedes.png">
+        <p>Hit the road with confidence at Aziz Rental Car. We offer a variety of clean, reliable vehicles to suit your needs, all at competitive rates. Whether you're exploring the city or embarking on a road trip adventure, Aziz Rental Car gets you there comfortably and conveniently.</p>
+    </section>
+
+    <section id="service" class="services">
+        <h1>Services</h1>
+        <div class="wrapper">
+          <div class="card">
+            <img src="/image/pexels-wavyvisuals-377312923-18413126 (1).jpg" />
+            <div class="information">
+              <h1>Vehicle Rentals</h1>
+              <p>Our Vehicle Rentals service provides a range of cars for flexible rental periods, ensuring a smooth and convenient experience.</p>
+              <button onclick="toggleArticle('vehicle-rentals')">Read More</button>
+            </div>
+            <div class="article" id="vehicle-rentals">
+              <p>Explore the thrill of luxury and sport with our Vehicle Rentals service at Aziz Rental Car. Whether you're seeking the sleek lines of a luxury sedan, the power of a sports car, or the versatility of an SUV, we cater to every preference. Our commitment to quality ensures each vehicle is meticulously maintained for your comfort and safety. Enjoy the best prices in town without compromising on style or performance. Experience the ultimate driving pleasure with Aziz Rental Car.</p>
+              <button onclick="toggleInformation('vehicle-rentals')">Back</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="/image/taxi-driver-female-client-interacting-formal-way.jpg" />
+            <div class="information">
+              <h1>Airport Transfers</h1>
+              <p>Our Airport Transfers service offers timely and comfortable rides to and from the airport, ensuring a stress-free journey. Enjoy reliable service and competitive rates.</p>
+              <button onclick="toggleArticle('airport-transfers')">Read More</button>
+            </div>
+            <div class="article" id="airport-transfers">
+              <p>Enjoy a hassle-free journey with our Airport Transfers service at Aziz Rental Car. We specialize in providing timely and comfortable rides to and from the airport, ensuring you arrive on time and in style. Whether you're traveling for business or pleasure, our professional drivers and well-maintained vehicles guarantee a smooth experience. Experience the convenience and reliability of Aziz Rental Car's Airport Transfers, where your journey begins and ends with comfort and ease.</p>
+              <button onclick="toggleInformation('airport-transfers')">Back</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="image/insurance.jpg" />
+            <div class="information">
+              <h1>Insurance Options</h1>
+              <p>Our Insurance Options offer comprehensive coverage plans for your rental car, tailored to meet your needs and budget. Enjoy peace of mind on every journey.</p>
+              <button onclick="toggleArticle('insurance-options')">Read More</button>
+            </div>
+            <div class="article" id="insurance-options">
+              <p>At Aziz Rental Car, we understand the importance of peace of mind while on the road. Our Insurance Options provide comprehensive coverage plans tailored to meet your needs and budget. Whether you prefer basic coverage or comprehensive protection, we ensure you're covered against unforeseen events. Drive with confidence knowing that Aziz Rental Car has your safety and security in mind. Explore our range of insurance options and choose the plan that best suits your requirements.</p>
+              <button onclick="toggleInformation('insurance-options')">Back</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="image/Customer Support.jpg" />
+            <div class="information">
+              <h1>Customer Support</h1>
+              <p>Our Customer Support service is available 24/7 to assist you with any queries or issues. Enjoy prompt and friendly assistance for a hassle-free experience.</p>
+              <button onclick="toggleArticle('customer-support')">Read More</button>
+            </div>
+            <div class="article" id="customer-support">
+              <p>At Aziz Rental Car, we prioritize your satisfaction and convenience. Our dedicated Customer Support team is available round-the-clock to address any queries or concerns you may have. Whether you need assistance with booking, vehicle information, or any other inquiries, our friendly and knowledgeable support staff are here to help. Experience hassle-free customer service that enhances your rental experience with Aziz Rental Car.</p>
+              <button onclick="toggleInformation('customer-support')">Back</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="image/chauffeur.webp" />
+            <div class="information">
+              <h1>Driver Services</h1>
+              <p>Our Driver Services provide professional and courteous drivers for a safe and comfortable journey. Enjoy a relaxing ride with our reliable and skilled drivers.</p>
+              <button onclick="toggleArticle('driver-services')">Read More</button>
+            </div>
+            <div class="article" id="driver-services">
+              <p>Experience a luxurious journey with our dedicated Driver Services at Aziz Rental Car. Our professional drivers are trained to provide you with a safe, comfortable, and stress-free travel experience. Whether you require chauffeur services for business trips, special occasions, or leisure travel, our drivers ensure punctuality, discretion, and professionalism. Enjoy the convenience and peace of mind that comes with our premium Driver Services.</p>
+              <button onclick="toggleInformation('driver-services')">Back</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="image/security.jpg" />
+            <div class="information">
+              <h1>Security Services</h1>
+              <p>Our Security Services offer professional bodyguards and armored cars for your safety and peace of mind. Enjoy top-tier protection with our reliable and discreet service.</p>
+              <button onclick="toggleArticle('security-services')">Read More</button>
+            </div>
+            <div class="article" id="security-services">
+              <p>Experience unparalleled security with our dedicated Security Services at Aziz Rental Car. We provide professional bodyguard services and armored vehicles to ensure your safety and peace of mind during your travels. Whether you require VIP protection, secure transport for valuables, or event security, our team is trained to handle any situation with discretion and efficiency. Trust Aziz Rental Car for top-tier security solutions tailored to meet your needs.</p>
+              <button onclick="toggleInformation('security-services')">Back</button>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="Featured" class="featured">
+      <h1>Offers</h1>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide " id="car1">
+            <img src="image/bmw 2.png" alt="Car 1">
+            <div class="slide-details">
+              <h2>Yellow BMW F82 M4</h2>
+              <p>The Yellow BMW F82 M4 is a high-performance coupe that combines striking aesthetics with exhilarating speed and precision engineering.</p>
+              <h4>Price: 180$ /day</h4>
+            </div>
+          </div>
+          <div class="slide" id="car2">
+            <img src="image/escalade 3.png" alt="Car 2">
+            <div class="slide-details">
+              <h2>Cadillac Escalade 2018  </h2>
+              <p>The 2018 Cadillac Escalade is a luxurious full-size SUV offering unmatched comfort, advanced technology, and powerful performance.</p>
+              <h4>Price:100$ /day </h4>
+            </div>
+          </div>
+
+          <div class="slide" id="car2">
+            <img src="image/cherokee.png" alt="Car 2">
+            <div class="slide-details">
+              <h2>Jeep Grand Cherokee 2018 </h2>
+              <p>The 2018 Jeep Grand Cherokee is a versatile SUV known for its rugged off-road capability, refined interior, and advanced safety features.</p>
+              <h4>Price: 110$ /day</h4>
+            </div>
+          </div>
+
+        
+
+          <div class="slide" id="car2">
+            <img src="image/civic.png" alt="Car 2">
+            <div class="slide-details">
+              <h2>Honda Civic 2018</h2>
+              <p>The 2018 Honda Civic is a compact car celebrated for its reliability, fuel efficiency, modern design, and advanced technology.</p>
+              <h4>Price: 80$ /day</h4>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="thumbnails">
+          <img src="image/bmw 2.png" onclick="currentSlide(1)" alt="Thumbnail 1">
+          <img src="image/escalade 3.png" onclick="currentSlide(2)" alt="Thumbnail 1">
+          <img src="image/cherokee.png" onclick="currentSlide(3)" alt="Thumbnail 2">
+          <img src="image/civic.png" onclick="currentSlide(4)" alt="Thumbnail 2">
+
+
+
+        </div>
+      </div>
+    </section>
+    
+
+
+
+
+
+
+    <section id="contact" class="contact">
+
+      <h1>Contact Us</h1>
+      <div class="contact-form">
+      <form >
+
+        <label>Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+  
+        <label >Email: </label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+  
+        <label >Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter your subject">
+  
+        <label >Message:</label>
+        <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+        <div class="submit">
+        <input type="submit" value="SUBMIT">
+      </div>
+      </form>
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function toggleArticle(id) {
+        var articles = document.querySelectorAll('.article');
+        articles.forEach(function(article) {
+          article.style.display = 'none';
+        });
+
+        var infoDivs = document.querySelectorAll('.information');
+        infoDivs.forEach(function(info) {
+          info.style.display = 'flex';
+        });
+
+        var article = document.getElementById(id);
+        var info = article.previousElementSibling;
+        article.style.display = 'block';
+        info.style.display = 'none';
+      }
+
+
+
+      function toggleInformation(id) {
+        var article = document.getElementById(id);
+        var info = article.parentElement.querySelector('.information');
+        article.style.display = 'none';
+        info.style.display = 'flex';
+      }
+      </script>
+      
+    
+
+
+        
+        <script>
+          var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function currentSlide(n) {
+           showSlides(slideIndex = n);
+          }
+
+      function showSlides(n) {
+       var slides = document.getElementsByClassName("slide");
+       var thumbnails = document.getElementsByClassName("thumbnails")[0].getElementsByTagName("img");
+  
+      if (n > slides.length) {
+      slideIndex = 1;
+      }    
+      if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      
+      for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+      }
+  
+        slides[slideIndex - 1].style.display = "flex";  
+        thumbnails[slideIndex - 1].className += " active";
+      }
+
+        </script>
+
+
+
+</body>
+
+</html>
